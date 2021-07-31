@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9245B5CF26AEFAD300973AAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9245B5CE26AEFAD300973AAE /* AppDelegate.swift */; };
+		9245B5D126AEFAD300973AAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9245B5D026AEFAD300973AAE /* SceneDelegate.swift */; };
+		9245B5D326AEFAD300973AAE /* KanbanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9245B5D226AEFAD300973AAE /* KanbanViewController.swift */; };
+		9245B5D826AEFAD900973AAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9245B5D726AEFAD900973AAE /* Assets.xcassets */; };
+		9245B5DB26AEFAD900973AAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9245B5D926AEFAD900973AAE /* LaunchScreen.storyboard */; };
+		9245B5E326B026B700973AAE /* BoardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9245B5E226B026B700973AAE /* BoardCollectionViewCell.swift */; };
+		9245B5E526B02B5800973AAE /* ItemsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9245B5E426B02B5800973AAE /* ItemsCollectionView.swift */; };
+		9245B5E726B02B8C00973AAE /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9245B5E626B02B8C00973AAE /* ItemCollectionViewCell.swift */; };
+		9245B5E926B02BBB00973AAE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9245B5E826B02BBB00973AAE /* Item.swift */; };
+		9245B5F026B5D50C00973AAE /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9245B5EF26B5D50C00973AAE /* Board.swift */; };
+		9245B5F226B5D70C00973AAE /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9245B5F126B5D70C00973AAE /* String+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9245B5CB26AEFAD300973AAE /* KanbanBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanbanBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9245B5CE26AEFAD300973AAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9245B5D026AEFAD300973AAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9245B5D226AEFAD300973AAE /* KanbanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanbanViewController.swift; sourceTree = "<group>"; };
+		9245B5D726AEFAD900973AAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9245B5DA26AEFAD900973AAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9245B5DC26AEFAD900973AAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9245B5E226B026B700973AAE /* BoardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardCollectionViewCell.swift; sourceTree = "<group>"; };
+		9245B5E426B02B5800973AAE /* ItemsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsCollectionView.swift; sourceTree = "<group>"; };
+		9245B5E626B02B8C00973AAE /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		9245B5E826B02BBB00973AAE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		9245B5EF26B5D50C00973AAE /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		9245B5F126B5D70C00973AAE /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9245B5C826AEFAD200973AAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9245B5C226AEFAD200973AAE = {
+			isa = PBXGroup;
+			children = (
+				9245B5CD26AEFAD300973AAE /* KanbanBoard */,
+				9245B5CC26AEFAD300973AAE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9245B5CC26AEFAD300973AAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9245B5CB26AEFAD300973AAE /* KanbanBoard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9245B5CD26AEFAD300973AAE /* KanbanBoard */ = {
+			isa = PBXGroup;
+			children = (
+				9245B5EB26B5CA7A00973AAE /* Sources */,
+				9245B5F326B5D72F00973AAE /* Extensions */,
+				9245B5EA26B5C9DD00973AAE /* Resources */,
+			);
+			path = KanbanBoard;
+			sourceTree = "<group>";
+		};
+		9245B5EA26B5C9DD00973AAE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9245B5D726AEFAD900973AAE /* Assets.xcassets */,
+				9245B5D926AEFAD900973AAE /* LaunchScreen.storyboard */,
+				9245B5DC26AEFAD900973AAE /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9245B5EB26B5CA7A00973AAE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9245B5CE26AEFAD300973AAE /* AppDelegate.swift */,
+				9245B5D026AEFAD300973AAE /* SceneDelegate.swift */,
+				9245B5EC26B5CA9F00973AAE /* ViewController */,
+				9245B5ED26B5CAB900973AAE /* View */,
+				9245B5EE26B5CAC300973AAE /* Model */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9245B5EC26B5CA9F00973AAE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9245B5D226AEFAD300973AAE /* KanbanViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9245B5ED26B5CAB900973AAE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9245B5E226B026B700973AAE /* BoardCollectionViewCell.swift */,
+				9245B5E426B02B5800973AAE /* ItemsCollectionView.swift */,
+				9245B5E626B02B8C00973AAE /* ItemCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9245B5EE26B5CAC300973AAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9245B5E826B02BBB00973AAE /* Item.swift */,
+				9245B5EF26B5D50C00973AAE /* Board.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9245B5F326B5D72F00973AAE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9245B5F126B5D70C00973AAE /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9245B5CA26AEFAD200973AAE /* KanbanBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9245B5DF26AEFAD900973AAE /* Build configuration list for PBXNativeTarget "KanbanBoard" */;
+			buildPhases = (
+				9245B5C726AEFAD200973AAE /* Sources */,
+				9245B5C826AEFAD200973AAE /* Frameworks */,
+				9245B5C926AEFAD200973AAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KanbanBoard;
+			productName = KanbanBoard;
+			productReference = 9245B5CB26AEFAD300973AAE /* KanbanBoard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9245B5C326AEFAD200973AAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					9245B5CA26AEFAD200973AAE = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 9245B5C626AEFAD200973AAE /* Build configuration list for PBXProject "KanbanBoard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9245B5C226AEFAD200973AAE;
+			productRefGroup = 9245B5CC26AEFAD300973AAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9245B5CA26AEFAD200973AAE /* KanbanBoard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9245B5C926AEFAD200973AAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9245B5DB26AEFAD900973AAE /* LaunchScreen.storyboard in Resources */,
+				9245B5D826AEFAD900973AAE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9245B5C726AEFAD200973AAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9245B5D326AEFAD300973AAE /* KanbanViewController.swift in Sources */,
+				9245B5CF26AEFAD300973AAE /* AppDelegate.swift in Sources */,
+				9245B5E526B02B5800973AAE /* ItemsCollectionView.swift in Sources */,
+				9245B5E726B02B8C00973AAE /* ItemCollectionViewCell.swift in Sources */,
+				9245B5E926B02BBB00973AAE /* Item.swift in Sources */,
+				9245B5D126AEFAD300973AAE /* SceneDelegate.swift in Sources */,
+				9245B5F026B5D50C00973AAE /* Board.swift in Sources */,
+				9245B5F226B5D70C00973AAE /* String+Extension.swift in Sources */,
+				9245B5E326B026B700973AAE /* BoardCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9245B5D926AEFAD900973AAE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9245B5DA26AEFAD900973AAE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9245B5DD26AEFAD900973AAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9245B5DE26AEFAD900973AAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9245B5E026AEFAD900973AAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Y3X7GA52A;
+				INFOPLIST_FILE = KanbanBoard/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.polinakamurko.KanbanBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9245B5E126AEFAD900973AAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Y3X7GA52A;
+				INFOPLIST_FILE = KanbanBoard/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.polinakamurko.KanbanBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9245B5C626AEFAD200973AAE /* Build configuration list for PBXProject "KanbanBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9245B5DD26AEFAD900973AAE /* Debug */,
+				9245B5DE26AEFAD900973AAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9245B5DF26AEFAD900973AAE /* Build configuration list for PBXNativeTarget "KanbanBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9245B5E026AEFAD900973AAE /* Debug */,
+				9245B5E126AEFAD900973AAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9245B5C326AEFAD200973AAE /* Project object */;
+}
